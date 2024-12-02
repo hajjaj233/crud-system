@@ -1,0 +1,63 @@
+body{
+    background-color: #F7ECDE;
+}
+.dotted{
+    border: 2px black dotted;
+}
+.title h1{
+    
+    font-family: "Pacifico";
+    font-weight: 500;
+    font-size: 50px;
+    color: rgb(53, 46, 40);
+    position: relative;
+    z-index: 999;
+}
+.title h1::after{
+    content: "";
+    background-color: #FEC260;
+    width: 270px;
+    height:25px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -999;
+    transition: 0.5s;
+}
+.title h1:hover::after{
+    height: 45px;
+}
+.my-w{
+    width: 150px;
+    background-color: #D1512D;
+    font-family: "PT Sans Caption";
+    font-size: 16px;
+    font-weight: 400;
+}
+.my-w:hover{
+    background-color: #BB4120;
+}
+.second-title{
+    background-image: linear-gradient(to right, #3FA55B 0%, #B3AC49 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  
+}
+.second-title h3{
+    font-family: "Righteous";
+    font-size: 25px;
+    font-weight: 500;
+}
+label{
+    font-family: "PT Sans Caption";
+    font-weight: 600;
+    font-size: 16px;
+}
+.demo{
+    font-family: "PT Sans Caption";
+    font-size: 16px;
+    font-weight: 700;
+}
+.my-bg{
+    background-color: #F8F9FA;
+}
